@@ -14,7 +14,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H5M11 5l-7 7 7 7"/></svg>
       </button>
 
-      <h1>карточка пользователя</h1>
+      <h1>Карточка пользователя</h1>
 
       <div class="menu">
         <button class="icon-btn" id="menu-btn" type="button" aria-label="Действия" aria-haspopup="true" aria-expanded="false" aria-controls="menu-list">
@@ -36,7 +36,7 @@
         </div>
       </section>
 
-      <h3 class="section-title">проблемы, отмеченные пользователем:</h3>
+      <h3 class="section-title">Проблемы, отмеченные пользователем:</h3>
 
       <div class="chips" id="chips" role="group" aria-label="Фильтр по категории"></div>
 
@@ -69,9 +69,9 @@
         return f[h > 10 && h < 20 ? 2 : m === 1 ? 0 : m >= 2 && m <= 4 ? 1 : 2];
       };
       const STATUS = {
-        unsolved: { label: 'не решена', cls: 'status--unsolved' },
-        in_progress: { label: 'решается', cls: '' },
-        solved: { label: 'решена', cls: 'status--done' }
+        unsolved: { label: 'Не решена', cls: 'status--unsolved' },
+        in_progress: { label: 'Решается', cls: '' },
+        solved: { label: 'Решена', cls: 'status--done' }
       };
 
       const STATUS_COLOR = { unsolved: '#e8553b', in_progress: '#f5b82e', solved: '#2fb464' };
@@ -152,7 +152,7 @@
                 (has ? 'посмотреть прикреплённые медиа' : 'медиа не прикреплены') + '</button>' +
             '</div>' +
             '<a class="map-thumb" href="index.html#problem-' + p.id + '" style="--pin:' + (STATUS_COLOR[p.status] || '#b3262b') + '" data-lat="' + p.lat + '" data-lng="' + p.lng + '" aria-label="Показать эту метку на карте">' +
-              '<div class="map-thumb__map"></div><span>на карте</span></a>' +
+              '<div class="map-thumb__map"></div><span>На карте</span></a>' +
           '</li>';
         }).join('');
         watchThumbs();
